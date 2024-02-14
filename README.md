@@ -4,12 +4,11 @@
 
 This Streamlit web application helps in the extraction process of invoices. It allows users to upload PDF files containing invoices, extracts relevant information, and displays it in a structured format.
 
-## Tools & Technologies
+## Dependencies
 
 - **Streamlit**: Python library for building interactive web applications.
 - **langchain**: Library for natural language processing tasks.
 - **Pinecone**: Vector database service for similarity search and recommendation.
-- **PyPDF2**: Python library for reading and manipulating PDF files.
 - **OpenAI**: API for natural language processing and generation tasks.
 
 ## Usage
