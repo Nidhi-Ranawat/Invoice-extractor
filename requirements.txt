@@ -11,3 +11,4 @@ pdfminer.six==20221105
 pinecone-client==3.0.2
 pypdf==4.0.1
 PyPDF2==3.0.1
+python-dotenv
