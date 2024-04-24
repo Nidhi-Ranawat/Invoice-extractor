@@ -39,13 +39,13 @@ def main():
             st.write("*Documents uploaded* :"+str(len(final_docs_list)))
 
             # Pushing data to PINECONE
-            push_to_pinecone(PINECONE_API_KEY,"gcp-starter","text-to-csv",embeddings,final_docs_list)
+            push_to_pinecone(PINECONE_API_KEY,"us-east-1","text-to-csv",embeddings,final_docs_list)
 
     extract=st.button("Extract")
 
     if extract:
         # Retrieving relevant documents from Pinecone
-        relavant_docs=similar_docs(PINECONE_API_KEY,"gcp-starter","text-to-csv",embeddings)
+        relavant_docs=similar_docs(PINECONE_API_KEY,"us-east-1","text-to-csv",embeddings)
 
         combined_df = pd.DataFrame()
 
